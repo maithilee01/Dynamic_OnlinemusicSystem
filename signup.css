@@ -1,0 +1,150 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #e7e7e7;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 800px; /* Set max-width for large screens */
+    height: auto;
+    margin: 3% auto;
+    box-shadow: 2px 18px 70px 0px #9D9D9D;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.login-text {
+    background: linear-gradient(to left, #ab68ca, #de67a3);
+    padding: 5%;
+    transition: all 0.5s ease-in-out;
+    z-index: 11;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.text {
+    margin-left: 20px;
+    display: block;
+    transition: all 0.5s ease-in-out;
+}
+
+.text a, .text a:visited {
+    font-size: 36px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+}
+
+hr {
+    width: 10%;
+    float: left;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+input {
+    margin-top: 20px;
+    height: 40px;
+    width: 100%;
+    max-width: 320px; /* Adjust width for smaller screens */
+    border-radius: 2px;
+    border: none;
+    background-color: #444;
+    opacity: 0.8;
+    outline: none;
+    color: #fff;
+    padding-left: 10px;
+}
+
+button {
+    margin-top: 40px;
+    height: 40px;
+    width: 100%;
+    max-width: 160px; /* Ensure buttons are not too wide */
+    outline: none;
+    cursor: pointer;
+}
+
+.login-btn {
+    background: #fff;
+    border: none;
+    border-radius: 2px;
+    color: #696a86;
+}
+
+.signup-btn {
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 2px;
+    color: #fff;
+    margin-left: 30px;
+}
+
+.call-text {
+    background-color: #fff;
+    width: 100%;
+    max-width: 800px;
+    padding: 10%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.call-text h1 {
+    font-size: 32px;
+    margin-top: 10%;
+    color: #696a86;
+}
+
+.call-text h1 span {
+    color: #333;
+    font-weight: bolder;
+}
+
+.call-text button {
+    height: 40px;
+    width: 180px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(to left, #ab68ca, #de67a3);
+    color: #fff;
+    font-weight: bolder;
+    margin-top: 30px;
+    cursor: pointer;
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .login-text, .call-text {
+        width: 100%;
+    }
+
+    .text input, .text button {
+        width: 80%; /* Adjust width for smaller screens */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .signup-btn {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .call-text button {
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    .call-text h1 {
+        font-size: 28px;
+    }
+}
